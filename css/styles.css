@@ -12,4 +12,7 @@
     font-weight: 700; 
     line-height: 26.4px; 
 }
+.full_width {
+    width:100vw;
+}
 
