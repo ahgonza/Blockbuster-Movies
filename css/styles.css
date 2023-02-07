@@ -1,0 +1,15 @@
+
+.topnav {
+    background-color: blue;
+    overflow: hidden;
+}
+.home_button {
+    color: yellow;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+}
+
