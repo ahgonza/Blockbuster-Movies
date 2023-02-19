@@ -2,6 +2,11 @@
 .topnav {
     background-color: blue;
     overflow: hidden;
+    position: sticky;
+    text-align:center;
+    vertical-align: middle;
+    width: 100vw;
+    height: 8%;
 }
 .home_button {
     color: yellow;
@@ -12,7 +17,5 @@
     font-weight: 700; 
     line-height: 26.4px; 
 }
-.full_width {
-    width:100vw;
-}
+
 
