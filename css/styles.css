@@ -17,5 +17,16 @@
     font-weight: 700; 
     line-height: 26.4px; 
 }
+.even_space {
+    display: flex;
+    justify-content: space-around; 
+    justify-content: space-between;
+}
+
+.center_text {
+    text-align: center;
+}
+
+
 
 
