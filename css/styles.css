@@ -3,19 +3,26 @@
     background-color: blue;
     overflow: hidden;
     position: sticky;
-    text-align:center;
-    vertical-align: middle;
     width: 100vw;
     height: 8%;
 }
 .home_button {
     color: yellow;
     font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif; 
-    font-size: 24px; 
+    font-size: 45px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
     line-height: 26.4px; 
+}
+.homeButtonPosition {
+    text-align: center;
+    line-height: 10px; 
+    z-index: 10;  
+    display: inline-block;
+    width: 100%;
+    line-height: 400px;
+    vertical-align: middle;
 }
 .even_space {
     display: flex;
@@ -27,6 +34,36 @@
     text-align: center;
 }
 
+.logInButton {
+    top: 20%;
+    left:1%;
+    width:100px;
+    height:40px;
+    position: absolute;
+    z-index: 2;
+    background: yellow;
+    font-family: Impact;
+    font-size: 20px;
+}
+.modal {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    width: 600px;
+    z-index: 2;
+}
 
+.overlay {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 0.5;
+    z-index: 1;
+  }
 
 

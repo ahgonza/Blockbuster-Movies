@@ -2,11 +2,28 @@
     <title>Home</title>
     <head>
         <link rel="stylesheet" href="css/styles.css">
+        <script type=text/javascript src="js/loginbuttonlogic.js"></script>
     </head>
     <body>
-        <div class="topnav full_width">
-            <a class="home_button">BLOCKBUSTER VIDEOS</a>
+        <div id="overlay" class="overlay">
+        <!-- THIS IS THE NAVBAR, YOU CAN COPY PASTE THIS CODE ONTO ANY PAGE-->
+        <div class="topnav">
+            <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="openLogin();" >
+            <br>
+            <div class="homeButtonPosition">
+                <a class="home_button">BLOCKBUSTER VIDEOS</a>
+            </div>
         </div>
+        <!-- STOP COPY PASTE HERE, BEFORE THIS LINE-->
+
+        <div id="logInModal" class="modal">
+            <div class="logIn-content">
+              <span class="close">&times;</span>
+              <p>Some text in the Modal..</p>
+            </div>
+          
+          </div>
+
         <h1><b>Movies or something</b></h1> 
             <div class="even_space">
                 <div><img src="./images/transformers200.jpg" height="350" width="300" onClick="alert('Good Choice!!!!!!!!!!!!!!!!!')">
@@ -15,12 +32,13 @@
                 <img src="./images/AOEPoster.jpg" height="350" width="300" onClick="alert('ALSO GOOD CHOICE')">
                 <h1 class="center_text"> Other title</h1>
                 </div>
-                <!-- You can stick images in this DIV and they will auto space : )))))) -->
+                <!-- You can stick images in this DIV and they will auto space : )))))) Just make sure to put them in their own, tinier div -->
 
             </div>
         <input type="button" value="Go see the movies" onclick="alert('Go watch transformers')">   
         <h2 style="display: inline-block" >Text 1</h2>
         <h3 style="display: inline-block" >Text 2</h3>
         <!--- Wanted to throw something in to see how updating code via gitbash would work - Vince-->
+    </div>
     </body>
 </html>
