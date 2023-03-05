@@ -1,4 +1,5 @@
 function openLogin() {
-    document.getElementById("overlay").style.visiblity= 'visible';
+    console.log(document.getElementById("overlay"));
+    document.getElementById("overlay").style.visibility= 'visible';
     document.getElementById("logInModal").style.visibility= 'visible';
 }

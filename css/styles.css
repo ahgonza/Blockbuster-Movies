@@ -1,10 +1,18 @@
 
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
 .topnav {
     background-color: blue;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     width: 100vw;
     height: 8%;
+    display: flex;
+    align-items: center;
+    padding: 12px;
 }
 .home_button {
     color: yellow;
@@ -35,18 +43,16 @@
 }
 
 .logInButton {
-    top: 20%;
-    left:1%;
     width:100px;
     height:40px;
-    position: absolute;
     z-index: 2;
     background: yellow;
     font-family: Impact;
     font-size: 20px;
 }
 .modal {
-    visibility: hidden;
+    visibility: hidden; 
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: bisque;
@@ -54,9 +60,13 @@
     z-index: 2;
 }
 
-.overlay {
-    visibility: hidden;
-    position: fixed;
+.overlay:before {
+    content: "";
+    visibility: hidden; 
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100vw;
