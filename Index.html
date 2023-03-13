@@ -9,9 +9,11 @@
         <div class="topnav">
             <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="openLogin();" >
             <div class="homeButtonPosition">
-                <a class="home_button">BLOCKBUSTER VIDEOS</a>
+                <a class="home_button">BLOCKBUSTER VIDEOS</a> 
+                <img src="images/cart.png" style="margin:0px 50px 0px 1250px" height="50" width= "50" onClick="alert('directing to shopping page');">
             </div>
-
+<!-- confused on how to add cart without making everything look like crap, maybe it can be fixed later
+feel free to comment out the cart image I added-->
         <div id="overlay" class="overlay">
             <div id="logInModal" class="modal">
                 <div class="logIn-content">
@@ -60,16 +62,16 @@
     <!-- I commented out the previous code for this one. I think this works better for placing images on the same line-->
     <div class="row">
         <div class="column">
-            <img src="images/transformersPoster.jpg" style="width:100%">
-            <h1>Transformers</h1>
+            <img src="images/transformersPoster.jpg" style="width:90%" onClick="alert('directing to transformers page');">
+            <h1>Transformers (2007)</h1>
         </div>
         <div class="column">
-            <img src="images/tlkPoster.jpg" style="width:100%">
-            <h1>The Last Knight</h1>
+            <img src="images/dotmPoster.jpg" style="width:90%" onClick="alert('directing to dark of the moon page');">
+            <h1>Dark of the Moon (2011)</h1>
         </div>
         <div class="column">
-            <img src="images/dotmPoster.jpg" style="width:100%">
-            <h1 >Dark of the Moon</h1>
+            <img src="images/tlkPoster.jpg" style="width:90%" onClick="alert('directing to the last knight page');">
+            <h1 >The Last Knight (2017)</h1>
         </div>
     </div>
         <!--</div>-->
