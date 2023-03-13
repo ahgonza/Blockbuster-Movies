@@ -9,75 +9,31 @@
         <div class="topnav">
             <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="openLogin();" >
             <div class="homeButtonPosition">
-                <a class="home_button">BLOCKBUSTER VIDEOS</a> 
-                <img src="images/cart.png" style="margin:0px 50px 0px 1250px" height="50" width= "50" onClick="alert('directing to shopping page');">
+                <a class="home_button">BLOCKBUSTER VIDEOS</a>
             </div>
-<!-- confused on how to add cart without making everything look like crap, maybe it can be fixed later
-feel free to comment out the cart image I added-->
+        </div>
+
         <div id="overlay" class="overlay">
             <div id="logInModal" class="modal">
                 <div class="logIn-content">
                   <span class="close">&times;</span>
-                  <form action="action_page.php" method="post">
-                </div>
-                
-                <div class="container">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-                  <br>
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-                  <br>
-                  <button type="submit">Login</button>
-                  <br>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                  </label>
-                </div>
-                
-                <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
-                  </div>
-                  </form>
-                </div>
-              </div>
+        </div>
         </div>
         
-        </div>
-        <!-- STOP COPY PASTE HERE, BEFORE THIS LINE-->
-        <!--Movie selection-->
-        <!-- <h1><b>Movie Selection</b></h1> 
-            <div class="even_space">
-                <div><img src="./images/transformers200.jpg" height="350" width="300">
-                <h1 class="center_text"> Transformers</h1></div>
-                <div>
-                <img src="./images/AOEPoster.jpg" height="350" width="300" onClick="alert('ALSO GOOD CHOICE')">
-                <h1 class="center_text"> Age of Extinction</h1>
-                <img src="./images/tlkPoster.jpg" height="350" width="300" onClick="alert('good choice')">
-                <h1 class="center_text">The Last Knight</h1>
-                </div> //Commented out to test out below -->
-                <!-- You can stick images in this DIV and they will auto space : )))))) Just make sure to put them in their own, tinier div -->
-            <!--</div>-->
     <!-- I commented out the previous code for this one. I think this works better for placing images on the same line-->
     <div class="row">
         <div class="column">
-            <img src="images/transformersPoster.jpg" style="width:90%" onClick="alert('directing to transformers page');">
-            <h1>Transformers (2007)</h1>
+            <img src="images/transformersPoster.jpg" style="width:100%">
+            <h1>Transformers</h1>
         </div>
         <div class="column">
-            <img src="images/dotmPoster.jpg" style="width:90%" onClick="alert('directing to dark of the moon page');">
-            <h1>Dark of the Moon (2011)</h1>
+            <img src="images/tlkPoster.jpg" style="width:100%">
+            <h1>The Last Knight</h1>
         </div>
         <div class="column">
-            <img src="images/tlkPoster.jpg" style="width:90%" onClick="alert('directing to the last knight page');">
-            <h1 >The Last Knight (2017)</h1>
+            <img src="images/dotmPoster.jpg" style="width:100%">
+            <h1 >Dark of the Moon</h1>
         </div>
     </div>
-        <!--</div>-->
-        <input type="button" value="Go see the movies" onclick="alert('Go watch transformers')">   
-        <h4 style="display: inline-block" >Text 1</h4>
-        <h5 style="display: inline-block" >Text 2</h5>
-        <!--- Wanted to throw something in to see how updating code via gitbash would work - Vince-->
     </body>
 </html>
