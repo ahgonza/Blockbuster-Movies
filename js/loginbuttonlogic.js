@@ -17,4 +17,9 @@ function validateLogIn() {
     
     return isUsernameValid
 }
+function hideLogin() {
+    document.getElementById("overlay").style.visibility= 'hidden';
+    document.getElementById("logInModal").style.visibility= "hidden";
+    document.getElementById("logInContainer").style.visibility= 'hidden';
+}
     
