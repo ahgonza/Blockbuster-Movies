@@ -22,4 +22,14 @@ function hideLogin() {
     document.getElementById("logInModal").style.visibility= "hidden";
     document.getElementById("logInContainer").style.visibility= 'hidden';
 }
+const logInForm = document.getElementById("logInForm");
+
+logInForm.addEventListener("submit", function(submit) {
+  submit.preventDefault(); 
+  goodbyeButton(); 
+});
+
+function goodbyeButton() {
+    document.getElementById("logInButton").style.visibility= "hidden";
+}
     
