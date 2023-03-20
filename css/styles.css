@@ -54,10 +54,13 @@ body {
     visibility: hidden; 
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: rgb(37, 19, 237);
     width: 65%;
     height: 65%;
+    overflow: auto; 
+    position: relative;
     z-index: 2;
 }
 
