@@ -2,7 +2,7 @@
     <title>Second Page</title>
     <head>
         <link rel="stylesheet" href="css/styles.css">
-        <script type=text/javascript src="js/imageGallery.js">
+        <script src="js/imageGallery.js">
 
             var transformersGallery=["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.png", "images/movie1Gallery/tGallery3.png"];
         </script>
@@ -20,13 +20,13 @@
         <!-- Arrows and gallery images-->
             <div class="row">
                 <div class="column">
-                    <img src="images/arrow.png" style="width: 90%" style= "rotate: 180" id=arrow1 onClick="document.getElementById('img').src= images/movie1Gallery/tGallery2.png;">
+                    <img src="images/arrow.png" style="width: 50%"id=arrow1 onclick="backImage(m1Gallery);">
                 </div>
                 <div class="column">
                     <img src="images/movie1Gallery/tGallery1.png" style="width: 90%" id="img">
                 </div>
                 <div class="column">
-                    <img src="images/arrow.png" style="width: 90%" id=arrow2 onClick="backImg(transformersGallery);">
+                    <img src="images/arrow.png" style="width: 90%" id=arrow2 onclick="newImage(m1Gallery);">
                 </div>
             </div>
         </body>
