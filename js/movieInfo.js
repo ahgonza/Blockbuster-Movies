@@ -16,5 +16,5 @@ var movies = [{
     year: 2017,
     rating: "5.2 out of 10",
     price: 3000000
-}
-];
+}];
+

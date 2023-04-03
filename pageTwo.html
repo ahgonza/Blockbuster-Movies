@@ -2,10 +2,6 @@
     <title>Second Page</title>
     <head>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="js/imageGallery.js">
-
-            var transformersGallery=["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.png", "images/movie1Gallery/tGallery3.png"];
-        </script>
         <body>
         <!-- THIS IS THE NAVBAR, YOU CAN COPY PASTE THIS CODE ONTO ANY PAGE-->
             <div class="topnav">
@@ -33,7 +29,7 @@
                     <div align="center">
                     <h1>Image Gallery</h1>
                     <button type="button" onclick="m1Sum();">Summary</button>
-                    <button type="button" onclick="alert('Added Movie to Cart');">Add to Cart</button>
+                    <button type="button" id="addToCart">Add to Cart</button>
                     </div>
                 </div>
                 <div class="column">
@@ -42,6 +38,8 @@
                 </div>
             </div>
         <!--buttons-->
+        <script src="js/imageGallery.js"></script>
+        <script src="js/movieInfo.js"></script>
         </body>
     </head>
 </html>

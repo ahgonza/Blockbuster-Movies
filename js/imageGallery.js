@@ -1,4 +1,5 @@
 //gallery code
+var transformersGallery=["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.png", "images/movie1Gallery/tGallery3.png"];
 var m1Gallery = ["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.jpg","images/movie1Gallery/tGallery3.jpg"]
 var dotmGallery = [];
 var tlkGallery=[];
@@ -25,3 +26,7 @@ function m1Sum(){
     sumPopup.document.write("The fate of humanity is at stake when two races of robots, the good Autobots and the villainous Decepticons, bring their war to Earth. The robots have the ability to change into different mechanical objects as they seek the key to ultimate power. Only a human youth, Sam Witwicky (Shia LaBeouf) can save the world from total destruction.");
     return sumPopup;
 }
+
+document.getElementById("addToCart").addEventListener('click', function() {
+    console.log("Test");
+});
