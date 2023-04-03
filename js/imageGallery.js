@@ -28,5 +28,17 @@ function m1Sum(){
 }
 
 document.getElementById("addToCart").addEventListener('click', function() {
-    console.log("Test");
-});
+    var movieTitle = document.getElementById("movieTitle").textContent;
+    const currentCartMovie = JSON.parse(localStorage.getItem(movieTitle));
+    if (!currentCartMovie) {
+        var cartMovie = {
+            ...galleryMovies[movieTitle], 
+            quantity: 1 };
+    localStorage.setItem(movieTitle, JSON.stringify(cartMovie));
+} else {
+    var cartMovie = {
+        ...galleryMovies[movieTitle], 
+        quantity: currentCartMovie.quantity + 1 }
+        console.log(cartMovie);
+        localStorage.setItem(movieTitle,JSON.stringify(cartMovie));
+}});
