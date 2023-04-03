@@ -1,18 +1,4 @@
-/*
-var dotmGallery = [];
-var tlkGallery=[];
-
-function newImg(gallery) {
-    for(let i = 0; i<gallery.length;i++){
-        document.getElementById(img).src=gallery[i];
-    }
-}
-function backImg(gallery){
-    for(let i = gallery.length; i>0;i--){
-        document.getElementById(img).src=gallery[i];
-    }
-}
-old code*/ 
+//gallery code
 var m1Gallery = ["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.jpg","images/movie1Gallery/tGallery3.jpg"]
 var dotmGallery = [];
 var tlkGallery=[];
@@ -32,4 +18,10 @@ function backImage(gallery){
         counter= 2;
     }
     img.src=gallery[counter];
+}
+//summary code
+function m1Sum(){
+    var sumPopup = window.open("","","width=400,height=200,left=100,top=50");
+    sumPopup.document.write("The fate of humanity is at stake when two races of robots, the good Autobots and the villainous Decepticons, bring their war to Earth. The robots have the ability to change into different mechanical objects as they seek the key to ultimate power. Only a human youth, Sam Witwicky (Shia LaBeouf) can save the world from total destruction.");
+    return sumPopup;
 }
