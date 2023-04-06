@@ -26,8 +26,8 @@ var galleryMovies = {
 }};
 var transformersGallery=["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.png", "images/movie1Gallery/tGallery3.png"];
 var m1Gallery = ["images/movie1Gallery/tGallery1.png", "images/movie1Gallery/tGallery2.jpg","images/movie1Gallery/tGallery3.jpg"]
-var dotmGallery = [];
-var tlkGallery=[];
+var dotmGallery = ["images/movie2Gallery/dotm1.jpg", "images/movie2Gallery/dotm2.jpg","images/movie2Gallery/dotm3.jpg"];
+var tlkGallery=["images/movie3Gallery/tlk1.jpg", "images/movie3Gallery/tlk2.jpg","images/movie3Gallery/tlk3.jpg"];
 var counter=0;
 function newImage(gallery){
     var img = document.getElementById("img");
@@ -46,9 +46,9 @@ function backImage(gallery){
     img.src=gallery[counter];
 }
 //summary code
-function m1Sum(){
+function sum(movie){
     var sumPopup = window.open("","","width=400,height=200,left=100,top=50");
-    sumPopup.document.write(galleryMovies["Transformers (2007)"].synopsis);
+    sumPopup.document.write(movie.synopsis);
 }
 
 document.getElementById("addToCart").addEventListener('click', function() {
