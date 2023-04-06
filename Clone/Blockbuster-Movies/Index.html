@@ -1,0 +1,74 @@
+<html> 
+    <title>Home</title>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="LoginSheetFunctional/CSS/styles.css">
+    </head>
+    <body>
+        <!-- THIS IS THE NAVBAR, YOU CAN COPY PASTE THIS CODE ONTO ANY PAGE-->
+        <div class="topnav">
+            <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="openLogin();" >
+            <div class="homeButtonPosition">
+                <p class="home_button" onClick="window.location.href='Index.html'">BLOCKBUSTER VIDEOS</p>
+            </div>
+            <div class="cartPosition">
+              <img src="images/cart.png" width="75"height="60"style="margin:1px 100px 1px 1px;" onClick="retrieveCart();">
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay">
+        </div>
+        <div class="logInContainer">
+            <div id="logInModal" class="modal">
+          <form action="action_page.php" method="post" id="logInForm" onSubmit="return validateLogIn();">
+            <div class="container">
+              <label for="uname"><b><font color="white">Username</font></b></label>
+              <input type="text" placeholder="Enter Username" id="username" required>
+              <br>
+              <label for="psw"><b><font color="white">Password</font></b></label>
+              <input type="password" placeholder="Enter Password" id="psw" required>
+              <br>
+              <button type="submit">Login</button>
+              <br>
+              <div class="container" >
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> <font color="white">Remember me</font>
+                </label>
+                <br>
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw"><font color="white">Create <a href="LoginSheetFunctional/create.html">Account</font></a></span>
+              </div>
+
+            </div>
+          
+            <div class="container">
+              <button type="button" class="cancelbtn" onClick="hideLogin();">Continue as Guest</button>
+            </div>
+          </form>
+            </div>
+        </div>
+    <!-- Navbar ends here -->
+    <!--Explanatory Text-->
+    <br></br>
+    <br></br>
+    <h1 style="text-align:center; font-size:50px">Take a pick from our selection of movies!</h1>
+    
+    <!-- This code is useful for placing images on the same line-->
+    <div class="row">
+        <div class="column">
+            <img src="images/transformersPoster.jpg" style="width: 90%" onclick="window.location.href='2007.html'">
+            <h1 style="text-align:center;">Transformers (2007)</h1>
+        </div>
+        <div class="column">
+            <img src="images/dotmPoster.jpg" style="width: 90%">
+            <h1 style="text-align:center;">Dark of the Moon (2011)</h1>
+        </div>
+        <div class="column">
+            <img src="images/tlkPoster.jpg" style="width: 90%">
+            <h1 style="text-align:center;">The Last Knight (2017)</h1>
+        </div>
+    </div>
+    <script src="js/mainScript.js"></script>
+    <script src="js/cart.js"></script>
+    </body>
+</html>
