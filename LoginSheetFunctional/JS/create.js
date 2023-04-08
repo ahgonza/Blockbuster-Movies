@@ -2,7 +2,17 @@
 var users = ["coolguy"];
 var pass = ["nopass"];
 
-
+function setBooLogIn(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    var stringValue = value ? "true" : "false";
+    document.cookie = name + "=" + stringValue + expires + "; path=/";
+  }
+  
 
 function Create() {
     unamevalue = document.getElementById("unamecreate").value;

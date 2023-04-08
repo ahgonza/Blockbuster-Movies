@@ -34,4 +34,9 @@ function renderCart() {
         renderCart();
     };
 
+function clearCart() {
+    localStorage.clear();
+    document.getElementById("cart").innerHTML = "";
+    document.getElementById("cartInfo").innerHTML = "";
+}
 
