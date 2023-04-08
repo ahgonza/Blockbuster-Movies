@@ -7,6 +7,7 @@ function retrieveCart() {
     }
 };
 
+var cartTotal = 0;
 function renderCart() {
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
@@ -20,12 +21,17 @@ function renderCart() {
                     <td>${cartMovie.price}</td>
 			    </tr>
         `;
+        cartTotal += cartMovie.price * cartMovie.quantity;
 
+        document.getElementById("cartInfo").innerHTML =`<p>Total: $${cartTotal}</p>`;
         document.getElementById("cart").innerHTML += writeCart; 
         }
+
     };
 
     
     if (window.location.href.indexOf("cart.html") > -1) {
         renderCart();
     };
+
+
