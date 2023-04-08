@@ -8,7 +8,7 @@ var galleryMovies = {
         price: 1000000,
         image: "<img src='images/transformers200.jpg' height='200' width='150'>"
     }, 
-    'Transformers: Dark of the Moon': {
+    'Transformers: Dark of the Moon (2011)': {
         name: "Transformers: Dark of the Moon",
         synopsis: "Sam Witwicky (Shia LaBeouf) and his new girlfriend, Carly (Rosie Huntington-Whiteley), join the fray when the evil Decepticons renew their longstanding war against the Autobots. Optimus Prime (Peter Cullen) believes that resurrecting ancient Transformer Sentinel Prime (Leonard Nimoy), once the leader of the Autobots, may lead to victory. ",
         year: 2011,
