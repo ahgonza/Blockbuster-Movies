@@ -13,16 +13,32 @@ function renderCart() {
         const value = localStorage.getItem(key);
         var cartMovie = JSON.parse(value);
         const writeCart =`
-        <div class="cart_image">${cartMovie.image}</div>
-        <div class="cart_info"><p>
-        <strong>${cartMovie.name}</strong></p>
-        <p>
-        <strong>Quantity:</strong> ${cartMovie.quantity}
-        </p>
-        <p>
-        <strong>Price:</strong> ${cartMovie.price}
-        </div>
-
+        <table>
+		    <thead>
+			    <tr>
+                    <th>Movie</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+			    </tr>
+		    </thead>
+		    <tbody>
+			    <tr>
+                    <td>${cartMovie.name}</td>
+                    <td>${cartMovie.quantity}</td>
+                    <td>${cartMovie.price}</td>
+			    </tr>
+			    <tr>
+                    <td>Jane Smith</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
+			    </tr>
+			    <tr>
+                    <td>Bob Johnson</td>
+                    <td>40</td>
+                    <td>Chicago</td>
+			    </tr>
+		    </tbody>
+	    </table>
         `;
 
         document.getElementById("cart").innerHTML = writeCart; 

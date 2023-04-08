@@ -1,7 +1,7 @@
 //gallery code
 var galleryMovies = {
     'Transformers (2007)': {
-        name: "Transformers",
+        name: "Transformers (2007)",
         synopsis: "The fate of humanity is at stake when two races of robots, the good Autobots and the villainous Decepticons, bring their war to Earth. The robots have the ability to change into different mechanical objects as they seek the key to ultimate power. Only a human youth, Sam Witwicky (Shia LaBeouf) can save the world from total destruction.",
         year: 2007, 
         rating: "7 out of 10",
