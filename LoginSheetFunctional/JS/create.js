@@ -3,17 +3,9 @@ var users = ["coolguy"];
 var pass = ["nopass"];
 
 function setBooLogIn(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    var stringValue = value ? "true" : "false";
-    document.cookie = name + "=" + stringValue + expires + "; path=/";
+    document.cookie = "isLoggedIn=true; path=/";
   }
   
-
 function Create() {
     unamevalue = document.getElementById("unamecreate").value;
     pswvalue = document.getElementById("pswcreate").value;
@@ -31,7 +23,8 @@ function Check() {
     try {  
         if (users.includes(unamecheck) && pass.includes(pswcheck)) {
             if (users.indexOf("unamecheck" === pass.indexOf("pswcheck"))) {
-                return true;
+                setBooLogIn();
+                window.location.href = "../Index.html";
             } else {
                 err;
 

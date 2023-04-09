@@ -6,15 +6,22 @@ body {
 
 }
 .fullscreen {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  gap: 30px;
   height:100%;
-  width: 100vw; 
+  width: 100vw;
+  margin-top: 87px;
+
 }
 .topnav {
     background-color: blue;
     overflow: hidden;
     position: fixed;
+    top: 0;
     width: 100vw;
-    height: 8%;
+    height: 87px;
     display: flex;
     align-items: center;
     padding: 12px;
@@ -140,4 +147,19 @@ body {
   }
 .cartInfo {
   display: inline-block;
+}
+.button {
+  background-color: #5f04aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+}
+.cart_stuff {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }

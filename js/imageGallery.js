@@ -52,6 +52,10 @@ function sum(movie){
 }
 
 document.getElementById("addToCart").addEventListener('click', function() {
+    if (!isLoggedIn()) {
+        alert("Log In!");
+        return;
+    }
     var movieTitle = document.getElementById("movieTitle").textContent;
     const currentCartMovie = JSON.parse(localStorage.getItem(movieTitle));
     if (!currentCartMovie) {

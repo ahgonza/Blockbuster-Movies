@@ -1,8 +1,14 @@
-var isLoggedIn = false;
 
-if (isLoggedIn === true) {
+var isLoggedIn = function() {
+    var cookie = document.cookie;
+    var splitCook = cookie.split('=');
+    return Boolean(splitCook[1]);
+};
+
+if (isLoggedIn()) {
     document.getElementById("logInButton").style.visibility = "hidden";
 }
+
 function openLogin() {
     console.log(document.getElementById("overlay"));
     document.getElementById("overlay").style.visibility= 'visible';
