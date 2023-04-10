@@ -6,47 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <script src="JS/create.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="loginSheet/CSS/styles.css">
 </head>
 <body>
-    <div class="topnav">
-        <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="openLogin();" >
-        <div class="homeButtonPosition">
-            <p class="home_button" onClick="window.location.href='index.html'">BLOCKBUSTER VIDEOS</p>
-        </div>
-        <div class="cartPosition">
-          <img src="images/cart.png" width="75"height="60"style="margin:1px 100px 1px 1px;" onClick="window.location.href='cart.html'">
-        </div>
+  <div class="topnav">
+    <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="window.location.href='LoginSheetFunctional/logInSheetIndex.html';">
+    <div class="homeButtonPosition">
+        <p class="home_button" onClick="window.location.href='../index.html'">BLOCKBUSTER VIDEOS</p>
     </div>
-
-    <div id="overlay" class="overlay">
+    <div class="cartPosition">
+      <img src="../images/cart.png" width="75"height="60"style="margin:1px 100px 1px 1px;" onClick="retrieveCart();">
     </div>
-    <div class="logInContainer">
-        <div id="logInModal" class="modal">
-      <form action="action_page.php" method="post" onSubmit="return validateLogIn();">
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="username" required>
-          <br>
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="psw" required>
-          <br>
-          <button type="submit">Login</button>
-          <br>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-      
-        <div class="container">
-          <button type="button" class="cancelbtn" onClick="hideLogin();">Continue as Guest</button>
-        </div>
-      </form>
-        </div>
-    </div>
+</div>
+<div class="fullscreen">
+<div id="overlay" class="overlay">
+</div>
 <!--Top nav ends here-->
-    <form  onsubmit="Create();" action="index.html">
+    <form  onsubmit="Create();" action="../index.html">
     <div class="container">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" id="unamecreate" required>
@@ -60,6 +38,6 @@
     </form>
     
       </div>
-    
+    </div>
 </body>
 </html>
