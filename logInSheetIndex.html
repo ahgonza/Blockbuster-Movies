@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="loginSheet/CSS/styles.css">
+    <script src="../LoginSheetFunctional/JS/create.js"></script>
+</head>
+<body>
+  <div class="topnav">
+    <input type="button" id="logInButton" value="Log In" class="logInButton" onClick="window.location.href='LoginSheetFunctional/logInSheetIndex.html';">
+    <div class="homeButtonPosition">
+        <p class="home_button" onClick="window.location.href='../index.html'">BLOCKBUSTER VIDEOS</p>
+    </div>
+    <div class="cartPosition">
+      <img src="../images/cart.png" width="75"height="60"style="margin:1px 100px 1px 1px;" onClick="retrieveCart();">
+    </div>
+</div>
+
+<div id="overlay" class="overlay">
+</div>
+  
+<div class="fullscreen">
+
+    <div class="loggy">
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <br>
+            <button type="submit" onClick="Check();">Login</button>
+            <br>
+
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn" onClick="window.location.href='../index.html';">Cancel</button>
+            <input type="button" class="button" onClick="renderCreateAccount();" value="Create Account">
+        </div>
+    </div>
+        <form  class="createAccount" onsubmit="Create();">
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="unamecreate" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="pswcreate" required>
+                <br>
+                <br>
+                <button type="submit">Create Account</button>
+                <br>
+            </div>
+        </form>
+ </div>
+
+</body>
+</html>

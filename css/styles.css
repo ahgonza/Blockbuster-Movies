@@ -163,3 +163,7 @@ body {
   flex-direction: row;
   gap: 30px;
 }
+.createAccount {
+  display: none;
+}
+

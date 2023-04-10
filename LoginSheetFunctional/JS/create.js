@@ -6,14 +6,18 @@ function setBooLogIn(name, value, days) {
     document.cookie = "isLoggedIn=true; path=/";
   }
   
+function renderCreateAccount() {
+  document.querySelector('.loggy').style.display = 'none';
+  document.querySelector('.createAccount').style.display = 'block';
+};
 function Create() {
     unamevalue = document.getElementById("unamecreate").value;
     pswvalue = document.getElementById("pswcreate").value;
     users.push(unamevalue);
     pass.push(pswvalue);
     alert("Account Created");
-    return false;
-
+    document.querySelector('.loggy').style.display = 'block';
+    document.querySelector('.createAccount').style.display = 'none';
 }
 
 function Check() {
