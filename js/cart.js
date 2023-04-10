@@ -47,6 +47,11 @@ function clearCart() {
     document.getElementById("cart").innerHTML = "";
     document.getElementById("cartInfo").innerHTML = "";
 }
-
+function pay() {
+    alert("You bought $"+cartTotal+" worth of Transformers movies." )
+    localStorage.clear();
+    document.getElementById("cart").innerHTML = "";
+    document.getElementById("cartInfo").innerHTML = "";
+}
 window.addEventListener('load', renderCart);
 
