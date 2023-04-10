@@ -24,7 +24,7 @@ function Check() {
         if (users.includes(unamecheck) && pass.includes(pswcheck)) {
             if (users.indexOf("unamecheck" === pass.indexOf("pswcheck"))) {
                 setBooLogIn();
-                window.location.href = "../Index.html";
+                window.location.href = "../index.html";
             } else {
                 err;
 
